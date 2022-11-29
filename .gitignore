@@ -1,3 +1,5 @@
+.idea/
+.DS_Store
 pkg/sheets/.env
 pkg/sheets/*.json
 cmd/blacklist/credentials.json
