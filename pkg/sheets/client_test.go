@@ -2,7 +2,7 @@ package sheets
 
 import (
 	"context"
-	"github.com/itsahedge/blacklist/cmd/blacklist"
+	"github.com/itsahedge/blacklist/cmd/blacklists"
 	"github.com/thirdweb-dev/go-sdk/v2/thirdweb"
 	"testing"
 )
@@ -51,7 +51,7 @@ func Test_ClientWriteWeb3(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	contract, err := sdk.GetContractFromAbi(blacklist.USDC_TOKEN, blacklist.USDC_TOKEN_ABI)
+	contract, err := sdk.GetContractFromAbi(blacklists.USDC_TOKEN, blacklists.USDC_TOKEN_ABI)
 
 	// HANDLE EVENTS
 	toBlock := uint64(16072377)
